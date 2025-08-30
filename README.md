@@ -1,2 +1,3 @@
 # placeholder
-Repo de tareas de cripto 2025-1
+
+Repo de labs de cripto 2025-1
