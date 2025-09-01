@@ -18,7 +18,3 @@ Repo de tareas de cripto 2025-1
 | MITM mostrar todas las opciones | ✅  |
 | MITM detectar texto plano y llave | ✅  |
 | Issues Indica 4 complicaciones | ✅  |
-
-
-
-83 22 b2 68 00 00 00 30 00 00 b9 15 0c 00 00 00 00 00                 
