@@ -135,9 +135,9 @@ if __name__ == "__main__":
 
     # Configuración - MODIFICAR ESTOS VALORES
     TARGET_URL = "http://192.168.100.79:4280/vulnerabilities/brute/"
-    USERS_FILE = "users.txt"                    # Ruta a archivo de usuarios
-    PASSWORDS_FILE = "diccionario.txt"          # Ruta a archivo de contraseñas
-    PHPSESSID = "64b47f00f4f9ff16a18e035f73181cb3"            # RELLENAR CON TU COOKIE
+    USERS_FILE = "usernames.txt"                    
+    PASSWORDS_FILE = "1000000-password-seclists.txt"          
+    PHPSESSID = "64b47f00f4f9ff16a18e035f73181cb3"            
 
     print(f"Target URL: {TARGET_URL}")
     print(f"Users file: {USERS_FILE}")
