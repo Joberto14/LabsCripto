@@ -1,0 +1,9 @@
+| Criterio                                                                                             | Con marcas (pts) asignados | Nota                                                    |
+| ---------------------------------------------------------------------------------------------------- | ---------------: | ---------------: | ---------------: | ------------------------------------------------------- |
+| Identifica el algoritmo de hash utilizado en el registro                                             |                5 |                0 |                5 | Este criterio depende de una competencia de aprendizaje |
+| Identifica el algoritmo de hash utilizado al momento de iniciar sesión                               |                5 |                0 |                5 | Este criterio depende de una competencia de aprendizaje |
+| Genera el hash de la contraseña desde la consola del navegador                                       |               15 |                0 |               15 | Este criterio depende de una competencia de aprendizaje |
+| Intercepta el tráfico de login utilizando BurpSuite                                                  |               10 |                0 |               10 | Este criterio depende de una competencia de aprendizaje |
+| Realiza un intento de login modificando una contraseña incorrecta por el hash obtenido con BurpSuite |               15 |                0 |               15 | Este criterio depende de una competencia de aprendizaje |
+| Descripción de las políticas de privacidad o seguridad                                               |                5 |                0 |                5 | Este criterio depende de una competencia de aprendizaje |
+| Conclusiones sobre la seguridad                                                                      |                5 |                0 |                5 | Este criterio depende de una competencia de aprendizaje |
