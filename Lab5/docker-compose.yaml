@@ -1,0 +1,42 @@
+services:
+  c4-s1:
+    build: 
+      context: .
+      dockerfile: DockerfileC4
+    ports:
+      - "22:22"
+    networks:
+      - lab5-network
+    container_name: c4
+  c1:
+    build:
+      context: .
+      dockerfile: DockerfileC1
+    networks:
+      - lab5-network
+    container_name: c1
+    depends_on:
+      - c4-s1
+  c2:
+    build:
+      context: .
+      dockerfile: DockerfileC2
+    networks:
+      - lab5-network
+    container_name: c2
+    depends_on:
+      - c4-s1
+  c3:
+    build:
+      context: .
+      dockerfile: DockerfileC3
+    networks:
+      - lab5-network
+    container_name: c3
+    depends_on:
+      - c4-s1
+
+
+networks:
+  lab5-network:
+    driver: bridge

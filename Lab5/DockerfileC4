@@ -1,0 +1,27 @@
+# version de ubuntu
+FROM ubuntu:22.10
+# parte generica que configura las fuente de apt
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' \
+    /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get install openssh-client -y
+
+#instalacion del server 
+RUN apt-get install openssh-server -y
+
+RUN sed -i 's/OpenSSH_7.7p1 Ubuntu-4ubuntu0.1/OpenSSH_?                          /g' /usr/sbin/sshd
+
+#cofiguracion para el usuario prueba
+COPY ./sshd_config /etc/ssh/
+
+RUN useradd -ms /bin/bash prueba 
+RUN echo "prueba:prueba" | chpasswd
+
+# puerto para ssh
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]
+
+
+
+

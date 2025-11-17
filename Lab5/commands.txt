@@ -1,0 +1,20 @@
+build
+sudo docker build -t c4 -f DockerfileC4 .
+
+run
+sudo docker run --name c4 c4
+
+enter
+docker exec -it <container_id_or_name> bash
+
+copiar del container al pc
+docker cp <containerId>:/file/path/within/container /host/path/target
+
+ver ips
+docker inspect \
+  --format '{{ .NetworkSettings.IPAddress }}' c4
+
+ver ip compose 
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' c4
+
+
